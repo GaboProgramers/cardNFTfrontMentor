@@ -1,0 +1,193 @@
+.App {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.card {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--backgroundContent);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card .card__img {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.card .sobrePosicion {
+    position: absolute;
+    background-color: #0afff7e5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+
+}
+
+.sobrePosicion i {
+    font-size: 50px;
+    color: var(--title);
+}
+
+.card .card__img:hover .sobrePosicion {
+    opacity: .75;
+    transition: .5s ease-in-out;
+}
+
+.card .card__description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.card__description .cart__title {
+    padding: .2rem;
+    font-size: 1.4rem;
+    width: 100%;
+    color: var(--title);
+}
+
+.card__description .card__paragraph {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 300;
+}
+
+
+/* ---- Precios ---- */
+
+.ethPrice {
+    background-color: var(--backgroundContent);
+    padding: .3rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.eth__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ethPrice .eth__description {
+    padding: .3rem;
+}
+
+.eth__description .eth__price {
+    font-size: 1.2rem;
+    color: var(--secundary);
+}
+
+.eth__price .eth__svg {
+    width: 15px;
+    float: left;
+    aspect-ratio: 1;
+    display: block;
+    margin-right: 10px;
+}
+
+.ethPrice .eth__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+}
+
+.eth__date .eth__clock {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+.eth__date .date {
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--line);
+    margin-top: 1rem;
+}
+
+/* ------ Avatar ----- */
+
+.avatarCard {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.avatarCard .avatar__img {
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid var(--title);
+}
+
+.avatar__description .avatar__paragraph {
+    font-size: 1rem;
+    color: var(--title);
+    font-weight: 300;
+    width: 100%;
+    padding: .1rem;
+}
+
+.avatar__description .avatar__creating {
+    color: var(--primary);
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+@media (min-width: 450px) {
+    .content {
+        max-width: 400px;
+    }
+
+    .App {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .card__description .cart__title {
+        font-size: 1.5rem;
+    }
+
+    .card__description .card__paragraph {
+        font-size: 1.3rem;
+    }
+
+
+    /* ---- Precios ---- */
+
+    .ethPrice {
+        padding: .1rem 2rem;
+    }
+}
