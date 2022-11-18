@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
+    box-shadow: 2px 2px 3px 0px rgba(10, 255, 247, 0.44);
 }
 
 .card .card__img {
