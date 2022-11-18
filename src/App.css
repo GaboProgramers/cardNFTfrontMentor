@@ -82,6 +82,7 @@
     justify-content: space-between;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 3px 0px rgba(10, 255, 247, 0.44);
 }
 
 .eth__content {
