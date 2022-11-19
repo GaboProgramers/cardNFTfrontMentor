@@ -17,7 +17,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
-    box-shadow: 2px 2px 3px 0px rgba(10, 255, 247, 0.44);
+    box-shadow: 2px -1px rgba(10, 255, 247, 0.44);
 }
 
 .card .card__img {
@@ -37,7 +37,6 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-
 }
 
 .sobrePosicion i {
@@ -59,13 +58,13 @@
 
 .card__description .cart__title {
     padding: .2rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     width: 100%;
     color: var(--title);
 }
 
 .card__description .card__paragraph {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--primary);
     font-weight: 300;
 }
@@ -75,14 +74,14 @@
 
 .ethPrice {
     background-color: var(--backgroundContent);
-    padding: .3rem 1rem;
+    padding: .4rem 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    box-shadow: 2px 2px 3px 0px rgba(10, 255, 247, 0.44);
+    box-shadow: 2px 1px rgba(10, 255, 247, 0.44);
 }
 
 .eth__content {
@@ -92,7 +91,7 @@
 }
 
 .ethPrice .eth__description {
-    padding: .3rem;
+    padding: .5rem;
 }
 
 .eth__description .eth__price {
@@ -164,32 +163,21 @@
     font-size: 1rem;
 }
 
-@media (min-width: 450px) {
-    .content {
-        max-width: 400px;
-    }
-
+@media (min-width: 800px) {
     .App {
-        width: 1024px;
+        min-height: 100vh;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .App {
+        max-width: 1024px;
+        min-height: 100vh;
         margin: 0 auto;
     }
 
     .card {
-        padding: 2rem;
-    }
-
-    .card__description .cart__title {
-        font-size: 1.5rem;
-    }
-
-    .card__description .card__paragraph {
-        font-size: 1.3rem;
-    }
-
-
-    /* ---- Precios ---- */
-
-    .ethPrice {
-        padding: .1rem 2rem;
+        max-width: 400px;
     }
 }
